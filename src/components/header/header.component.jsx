@@ -13,7 +13,7 @@ const Header = ({ currentUser }) => {
         <Logo className="logo" />
       </Link>
       <div className="options">
-        <Link classname="option" to="/shop">
+        <Link className="option" to="/shop">
           SHOP
         </Link>
         <Link className="option" to="/shop">
