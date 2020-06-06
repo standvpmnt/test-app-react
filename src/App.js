@@ -58,7 +58,7 @@ class App extends React.Component {
     );
   }
 }
-// Also added redux, redux-logger, react-redux in this commit
+// Also added reselect using yarn
 
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser,
