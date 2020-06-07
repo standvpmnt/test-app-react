@@ -62,7 +62,7 @@ class App extends React.Component {
     );
   }
 }
-// Also added redux-persist to this commit
+// Also added react-stripe-checkout
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
