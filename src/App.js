@@ -62,7 +62,7 @@ class App extends React.Component {
     );
   }
 }
-// Also added reselect using yarn
+// Also added redux-persist to this commit
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
