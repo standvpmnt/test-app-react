@@ -75,7 +75,7 @@ class App extends React.Component {
     );
   }
 }
-// Also added styled-components
+// Also added redux-thunk to this commit
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
