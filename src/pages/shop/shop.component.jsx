@@ -8,7 +8,8 @@ import CollectionPageContainer from "../collection/collection.container";
 //   firestore,
 //   convertCollectionSnapshotToMap,
 // } from "../../firebase/firebase.utils";
-import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
+// import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
+import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import // selectIsCollectionFetching,
@@ -25,8 +26,8 @@ class ShopPage extends React.Component {
   // unsubscribeFromSnapshot = null;
 
   componentDidMount() {
-    const { fetchCollectionsStartAsync } = this.props;
-    fetchCollectionsStartAsync();
+    const { fetchCollectionsStart } = this.props;
+    fetchCollectionsStart();
     // const { updateCollections } = this.props;
     // const collectionRef = firestore.collection("collections");
     // collectionRef.get().then(snapshot => {
@@ -78,7 +79,8 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
+  // fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
+  fetchCollectionsStart: () => dispatch(fetchCollectionsStart()),
   // updateCollections: collectionsMap =>
   //   dispatch(updateCollections(collectionsMap)),
 });
