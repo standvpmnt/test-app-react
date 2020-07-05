@@ -1,5 +1,5 @@
 import React from "react";
-import { auth } from "../../firebase/firebase.utils";
+// import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import CartIcon from "../cart-icon/cart-icon.component";
